@@ -36,6 +36,7 @@ tabsParent.addEventListener("click", (event) => {
     }
 });
 
+//////////////////////////////
 const modal = document.querySelector(".modal");
 const modalTrigger = document.querySelector(".btn_white");
 const closeModalBtn = document.querySelector(".modal__close");
@@ -70,14 +71,14 @@ closeModalBtn.addEventListener("click", closeModal);
 let slideIndex = 1;
 showSlides(slideIndex);
 
-let tabcontet = document.querySelectorAll(".tabcontent");
-let tabcontent__descr = document.querySelectorAll(".tabcontent__descr");
+let tabcontet = document.querySelector(".tabcontent");
+let tabcontent__descr = document.querySelector(".tabcontent__descr");
 
-tabcontet.addEventListener ("click", function () {
+
+tabcontet.addEventListener ("onload", function () {
     showSlides(slideIndex += 1);
 });
-
-tabcontent__descr.addEventListener ("click", function () {
+tabcontent__descr.addEventListener ("onload", function () {
     showSlides(slideIndex -= 1);
 });
 
